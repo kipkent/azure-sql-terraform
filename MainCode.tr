@@ -1,3 +1,8 @@
+provider "azurerm" {
+  version = "~> 1.16"
+}
+
+
 resource "azurerm_sql_server" "server_sql" {
   name                         = "${var.server_name}-${var.environment}-sql"
   resource_group_name          = "${var.resource_group_name}"
